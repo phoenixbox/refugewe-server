@@ -10,42 +10,36 @@ class User < ActiveRecord::Base
   has_many :authentications
 
   def self.from_omniauth(params)
-    auth = Authentication.where(uid: params['profile']['id'], token: params['token']).take
+    password = Devise.friendly_token[0,20]
+    user = User.create!({
+      :email => params['profile']['email'],
+      :display_name => params['profile']['name'],
+      :uuid => "",
+      :password => password,
+      :password_confirmation => password
+    })
 
-    # If that Authentication doesnt exist for the user then create it
-    if !auth
-      password = Devise.friendly_token[0,20]
-      user = User.create!({
-        :email => params['profile']['email'],
-        :display_name => params['profile']['displayName'],
-        :uuid => "",
-        :password => password,
-        :password_confirmation => password
-      })
-
-      user.createAuthentication(params)
-      user
-    else
-      # That auth exists so just return the user
-      auth.user
-    end
+    user.createAuthentication(params)
+    user
   end
 
   def createAuthentication(params)
     auth = self.authentications.create({
       :uid => params['profile']['id'],
       :provider => params['provider'],
-      :token => params['token']
+      :token => params['profile']['token'],
+      :token_type => params['profile']['token_type'],
+      :expiration => params['profile']['expiration']
     })
 
-    createGithubAccount(auth, params)
+    createFacebookProfile(auth, params)
   end
 
-  def createGithubAccount(auth, params)
-    GithubAccount.create({
+  def createFacebookProfile(auth, params)
+    FacebookProfile.create({
       :uid => params['profile']['id'],
       :username => params['profile']['username'],
-      :display_name => params['profile']['displayName'],
+      :display_name => params['profile']['name'],
       :email => params['profile']['email'],
       :raw => params['profile']['raw'],
       :token => auth.token,

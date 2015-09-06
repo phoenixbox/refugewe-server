@@ -9,9 +9,21 @@ module V1
 
     # Creates an user
     def create
-      @user = User.from_omniauth(user_params)
+      # Does an authentication exist for the user
+      debugger
+      auth = Authentication.where({uid: user_params['profile']['id'], provider: user_params['provider']}).take
 
-      if @user.save # The user has either been created or fetched via the auth provider
+      if !auth
+        @user = User.from_omniauth(user_params)
+      else
+        # Auth exists - need to update the long lived token
+        auth.token = user_params['profile']['token']
+        auth.save
+        @user = auth.user
+        sign_in :user, @user
+      end
+
+      if @user.save
         render json: @user, serializer: V1::CreateSerializer, root: nil
       else
         render json: { error: t('user_create_error') }, status: :unprocessable_entity
@@ -25,7 +37,7 @@ module V1
     end
     # Second Level Profile Keys
     def facebook_profile_params
-      [:id, :username, :displayName, :email, {:raw => facebook_raw_params} ]
+      [:id, :name, :email, :token, :token_type, :expiration, {:raw => facebook_raw_params} ]
     end
     # Third Level Raw Keys
     def facebook_raw_params
