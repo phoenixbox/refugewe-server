@@ -4,15 +4,17 @@ module V1
 
     # POST /v1/login
     def create
-      @user = User.where({uuid: params[:uuid], access_token: params[:access_token]}).take
+      full_access_token = [params[:uuid],params[:access_token]].join(':')
+      @user = User.where({uuid: params[:uuid], access_token: full_access_token}).take
 
       return invalid_login_attempt unless @user
       if @user
-        # Refresh the token on session creation
-        # @user.refresh_access_token
         sign_in :user, @user
         # Implicit namespaced to V1::SessionSerializer
-        render json: @user, serializer: SessionSerializer, root: nil
+        auth = @user.authentications.find_by_provider('facebook')
+        profile = FacebookProfile.find_by_authentication_id(auth.id)
+
+        render json: @user, facebook_profile: profile, serializer: SessionSerializer, root: nil
       else
         invalid_login_attempt
       end

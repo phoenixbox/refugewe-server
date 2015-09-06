@@ -10,7 +10,6 @@ module V1
     # Creates an user
     def create
       # Does an authentication exist for the user
-      debugger
       auth = Authentication.where({uid: user_params['profile']['id'], provider: user_params['provider']}).take
 
       if !auth
@@ -20,7 +19,6 @@ module V1
         auth.token = user_params['profile']['token']
         auth.save
         @user = auth.user
-        sign_in :user, @user
       end
 
       if @user.save

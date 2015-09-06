@@ -1,43 +1,39 @@
 module V1
   class SessionSerializer < ActiveModel::Serializer
     attributes  :access_token,
-                :uuid,
                 :token_type,
-                :user_id,
-                :github_username,
-                :github_email,
-                :github_display_name,
-                :github_oauth_token
+                :uuid,
+                :email,
+                :facebook_username,
+                :facebook_display_name,
+                :facebook_token
 
-    def user_id
-      object.id
+    def access_token
+      object.access_token
     end
 
     def token_type
       'Bearer'
     end
 
-    # How to hold the once fetched GHA in an ivar so to reduce query count
-
-    def github_username
-      github_account.username
+    def uuid
+      object.uuid
     end
 
-    def github_oauth_token
-      github_account.token
+    def email
+      object.email
     end
 
-    def github_email
-      github_account.email
+    def facebook_username
+      @options[:facebook_profile].username
     end
 
-    def github_display_name
-      github_account.display_name
+    def facebook_display_name
+      @options[:facebook_profile].display_name
     end
 
-    def github_account
-      auth = object.authentications.find_by_provider('github')
-      GithubAccount.find_by_authentication_id(auth.id)
+    def facebook_token
+      @options[:facebook_profile].token
     end
   end
 end
