@@ -11,29 +11,49 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150907234546) do
+ActiveRecord::Schema.define(version: 20150908014835) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "hstore"
 
+  create_table "addresses", force: :cascade do |t|
+    t.string   "line_1",              null: false
+    t.string   "line_2"
+    t.string   "line_3"
+    t.string   "city"
+    t.string   "province"
+    t.string   "zipcode"
+    t.integer  "iso_country_code_cd", null: false
+    t.string   "type"
+    t.text     "description"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+  end
+
+  add_index "addresses", ["iso_country_code_cd"], name: "index_addresses_on_iso_country_code_cd", using: :btree
+
   create_table "authentications", force: :cascade do |t|
-    t.string  "uid",        null: false
-    t.string  "provider",   null: false
-    t.string  "token",      null: false
-    t.integer "user_id",    null: false
-    t.integer "expiration"
-    t.string  "token_type"
+    t.string   "uid",        null: false
+    t.string   "provider",   null: false
+    t.string   "token",      null: false
+    t.integer  "user_id",    null: false
+    t.integer  "expiration"
+    t.string   "token_type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "facebook_profiles", force: :cascade do |t|
-    t.string  "uid",               null: false
-    t.string  "username"
-    t.string  "display_name",      null: false
-    t.string  "email",             null: false
-    t.integer "authentication_id", null: false
-    t.string  "token",             null: false
-    t.hstore  "raw"
+    t.string   "uid",               null: false
+    t.string   "username"
+    t.string   "display_name",      null: false
+    t.string   "email",             null: false
+    t.integer  "authentication_id", null: false
+    t.string   "token",             null: false
+    t.hstore   "raw"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
   add_index "facebook_profiles", ["raw"], name: "index_facebook_profiles_on_raw", using: :gin
