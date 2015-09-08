@@ -6,5 +6,7 @@ class Organization < ActiveRecord::Base
   # Enums
   as_enum :nationality_cd, ISO_COUNTRY_CODES
   # Associations
-  has_many :addresses, as: :addressable
+  has_many :addresses, as: :addressable, dependent: :destroy
+  has_many :organization_users
+  has_many :users, through: :organization_users
 end
