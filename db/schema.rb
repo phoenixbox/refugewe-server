@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150908021629) do
+ActiveRecord::Schema.define(version: 20150908024431) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -59,6 +59,16 @@ ActiveRecord::Schema.define(version: 20150908021629) do
   end
 
   add_index "facebook_profiles", ["raw"], name: "index_facebook_profiles_on_raw", using: :gin
+
+  create_table "organizations", force: :cascade do |t|
+    t.string   "name",               null: false
+    t.integer  "nationality_cd",     null: false
+    t.integer  "primary_address_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "organizations", ["primary_address_id"], name: "index_organizations_on_primary_address_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
