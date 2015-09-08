@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150908014835) do
+ActiveRecord::Schema.define(version: 20150908021629) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,10 +25,12 @@ ActiveRecord::Schema.define(version: 20150908014835) do
     t.string   "province"
     t.string   "zipcode"
     t.integer  "iso_country_code_cd", null: false
-    t.string   "type"
     t.text     "description"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
+    t.integer  "type_cd",             null: false
+    t.integer  "addressable_id"
+    t.string   "addressable_type"
   end
 
   add_index "addresses", ["iso_country_code_cd"], name: "index_addresses_on_iso_country_code_cd", using: :btree
@@ -75,9 +77,11 @@ ActiveRecord::Schema.define(version: 20150908014835) do
     t.string   "roles",                  default: [], null: false, array: true
     t.integer  "marital_status_cd"
     t.integer  "nationality_cd"
+    t.integer  "primary_address_id"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["primary_address_id"], name: "index_users_on_primary_address_id", using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   add_index "users", ["roles"], name: "index_users_on_roles", using: :gin
 

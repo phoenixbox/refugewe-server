@@ -14,7 +14,7 @@ class User < ActiveRecord::Base
 
   # Associations
   has_many :authentications
-
+  has_many :addresses, as: :addressable
 
   def self.from_omniauth(params)
     password = Devise.friendly_token[0,20]
