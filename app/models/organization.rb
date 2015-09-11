@@ -1,6 +1,5 @@
 class Organization < ActiveRecord::Base
   ISO_COUNTRY_CODES ||= YAML.load(File.open("#{Rails.root}/config/constants/iso_country_codes.yml", 'r')).map {|country| country["code"] }
-
   # Validations
   validates :title, presence: true
   # Enums

@@ -8,8 +8,6 @@ class Condition < ActiveRecord::Base
   as_enum :type, CONDITION_TYPES
   as_enum :mdc, MDC_INDEXES
   as_enum :mdc_description, MDC_DESCS
-
-  puts MDC_DESCS
   # Associations
   belongs_to :medical_record
 end

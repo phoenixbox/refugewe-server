@@ -6,4 +6,5 @@ class MedicalRecord < ActiveRecord::Base
   as_enum :blood_type, BLOOD_TYPES
   # Associations
   has_many :documents, as: :documentable
+  has_many :consultations
 end

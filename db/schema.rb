@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150911070908) do
+ActiveRecord::Schema.define(version: 20150911164709) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -60,6 +60,17 @@ ActiveRecord::Schema.define(version: 20150911070908) do
   add_index "conditions", ["mdc_description_cd"], name: "index_conditions_on_mdc_description_cd", using: :btree
   add_index "conditions", ["stage_cd"], name: "index_conditions_on_stage_cd", using: :btree
   add_index "conditions", ["type_cd"], name: "index_conditions_on_type_cd", using: :btree
+
+  create_table "consultations", force: :cascade do |t|
+    t.text     "description"
+    t.integer  "medical_record_id"
+    t.integer  "user_id"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+  end
+
+  add_index "consultations", ["medical_record_id"], name: "index_consultations_on_medical_record_id", using: :btree
+  add_index "consultations", ["user_id"], name: "index_consultations_on_user_id", using: :btree
 
   create_table "dependents", force: :cascade do |t|
     t.integer  "relationship_cd", null: false
@@ -144,6 +155,17 @@ ActiveRecord::Schema.define(version: 20150911070908) do
   end
 
   add_index "organizations", ["primary_address_id"], name: "index_organizations_on_primary_address_id", using: :btree
+
+  create_table "prescriptions", force: :cascade do |t|
+    t.text     "description"
+    t.integer  "condition_id"
+    t.integer  "consultation_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  add_index "prescriptions", ["condition_id"], name: "index_prescriptions_on_condition_id", using: :btree
+  add_index "prescriptions", ["consultation_id"], name: "index_prescriptions_on_consultation_id", using: :btree
 
   create_table "professions", force: :cascade do |t|
     t.integer  "industry_cd", null: false
