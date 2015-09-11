@@ -17,6 +17,7 @@ class User < ActiveRecord::Base
   has_many :addresses, as: :addressable, dependent: :destroy
   has_many :organization_users
   has_many :organizations, through: :organization_users
+  has_many :professions
 
   def self.from_omniauth(params)
     password = Devise.friendly_token[0,20]
