@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150911055002) do
+ActiveRecord::Schema.define(version: 20150911062221) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -79,6 +79,22 @@ ActiveRecord::Schema.define(version: 20150911055002) do
   end
 
   add_index "facebook_profiles", ["raw"], name: "index_facebook_profiles_on_raw", using: :gin
+
+  create_table "families", force: :cascade do |t|
+    t.string   "name",       null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "family_users", force: :cascade do |t|
+    t.integer  "family_id"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "family_users", ["family_id"], name: "index_family_users_on_family_id", using: :btree
+  add_index "family_users", ["user_id"], name: "index_family_users_on_user_id", using: :btree
 
   create_table "organization_users", force: :cascade do |t|
     t.integer  "role_cd",         null: false

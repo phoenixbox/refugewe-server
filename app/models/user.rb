@@ -17,6 +17,9 @@ class User < ActiveRecord::Base
   has_many :addresses, as: :addressable, dependent: :destroy
   has_many :organization_users
   has_many :organizations, through: :organization_users
+  has_many :family_users
+  has_many :families, through: :family_users
+
   has_many :professions
   # - self-referential -
   has_many :dependents, foreign_key: :source_user_id
