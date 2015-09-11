@@ -18,6 +18,9 @@ class User < ActiveRecord::Base
   has_many :organization_users
   has_many :organizations, through: :organization_users
   has_many :professions
+  # - self-referential -
+  has_many :dependents, foreign_key: :source_user_id
+  has_many :declared_dependents, through: :dependents, source: :target_user
 
   def self.from_omniauth(params)
     password = Devise.friendly_token[0,20]
