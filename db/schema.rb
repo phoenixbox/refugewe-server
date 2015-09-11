@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150911065737) do
+ActiveRecord::Schema.define(version: 20150911070908) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,6 +45,17 @@ ActiveRecord::Schema.define(version: 20150911065737) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "conditions", force: :cascade do |t|
+    t.integer  "medical_record_id"
+    t.integer  "type_cd"
+    t.integer  "stage_cd"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+  end
+
+  add_index "conditions", ["stage_cd"], name: "index_conditions_on_stage_cd", using: :btree
+  add_index "conditions", ["type_cd"], name: "index_conditions_on_type_cd", using: :btree
 
   create_table "dependents", force: :cascade do |t|
     t.integer  "relationship_cd", null: false
@@ -105,6 +116,8 @@ ActiveRecord::Schema.define(version: 20150911065737) do
     t.datetime "updated_at",    null: false
   end
 
+  add_index "medical_records", ["blood_type_cd"], name: "index_medical_records_on_blood_type_cd", using: :btree
+  add_index "medical_records", ["gender_cd"], name: "index_medical_records_on_gender_cd", using: :btree
   add_index "medical_records", ["user_id"], name: "index_medical_records_on_user_id", using: :btree
 
   create_table "organization_users", force: :cascade do |t|
@@ -181,7 +194,7 @@ ActiveRecord::Schema.define(version: 20150911065737) do
     t.string   "PD"
     t.integer  "exam_date"
     t.integer  "expiration_date"
-    t.integer  "mdeical_record_id", null: false
+    t.integer  "medical_record_id", null: false
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
   end

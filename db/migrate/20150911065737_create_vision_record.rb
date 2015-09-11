@@ -16,7 +16,7 @@ class CreateVisionRecord < ActiveRecord::Migration
       t.string :PD
       t.integer :exam_date
       t.integer :expiration_date
-      t.belongs_to :mdeical_record, null: false
+      t.belongs_to :medical_record, null: false
       t.timestamps null: false
     end
   end
