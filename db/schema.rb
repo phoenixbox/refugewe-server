@@ -50,10 +50,14 @@ ActiveRecord::Schema.define(version: 20150911070908) do
     t.integer  "medical_record_id"
     t.integer  "type_cd"
     t.integer  "stage_cd"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
+    t.integer  "mdc_cd"
+    t.integer  "mdc_description_cd"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
   end
 
+  add_index "conditions", ["mdc_cd"], name: "index_conditions_on_mdc_cd", using: :btree
+  add_index "conditions", ["mdc_description_cd"], name: "index_conditions_on_mdc_description_cd", using: :btree
   add_index "conditions", ["stage_cd"], name: "index_conditions_on_stage_cd", using: :btree
   add_index "conditions", ["type_cd"], name: "index_conditions_on_type_cd", using: :btree
 

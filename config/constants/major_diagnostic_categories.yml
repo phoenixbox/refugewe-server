@@ -1,79 +1,79 @@
 ---
   -
-    name: "Pre-MDC"
-    code: "0"
+    index: "0"
+    description: "Pre-MDC"
   -
-    name: "Diseases and Disorders of the Nervous System"
-    code: "1"
+    index: "1"
+    description: "Diseases and Disorders of the Nervous System"
   -
-    name: "Diseases and Disorders of the Eye"
-    code: "2"
+    index: "2"
+    description: "Diseases and Disorders of the Eye"
   -
-    name: "Diseases and Disorders of the Ear, Nose, Mouth And Throat"
-    code: "3"
+    index: "3"
+    description: "Diseases and Disorders of the Ear, Nose, Mouth And Throat"
   -
-    name: "Diseases and Disorders of the Respiratory System"
-    code: "4"
+    index: "4"
+    description: "Diseases and Disorders of the Respiratory System"
   -
-    name: "Diseases and Disorders of the Circulatory System"
-    code: "5"
+    index: "5"
+    description: "Diseases and Disorders of the Circulatory System"
   -
-    name: "Diseases and Disorders of the Digestive System"
-    code: "6"
+    index: "6"
+    description: "Diseases and Disorders of the Digestive System"
   -
-    name: "Diseases and Disorders of the Hepatobiliary System And Pancreas"
-    code: "7"
+    index: "7"
+    description: "Diseases and Disorders of the Hepatobiliary System And Pancreas"
   -
-    name: "Diseases and Disorders of the Musculoskeletal System And Connective Tissue"
-    code: "8"
+    index: "8"
+    description: "Diseases and Disorders of the Musculoskeletal System And Connective Tissue"
   -
-    name: "Diseases and Disorders of the Skin, Subcutaneous Tissue And Breast"
-    code: "9"
+    index: "9"
+    description: "Diseases and Disorders of the Skin, Subcutaneous Tissue And Breast"
   -
-    name: "Diseases and Disorders of the Endocrine, Nutritional And Metabolic System"
-    code: "10"
+    index: "10"
+    description: "Diseases and Disorders of the Endocrine, Nutritional And Metabolic System"
   -
-    name: "Diseases and Disorders of the Kidney And Urinary Tract"
-    code: "11"
+    index: "11"
+    description: "Diseases and Disorders of the Kidney And Urinary Tract"
   -
-    name: "Diseases and Disorders of the Male Reproductive System"
-    code: "12"
+    index: "12"
+    description: "Diseases and Disorders of the Male Reproductive System"
   -
-    name: "Diseases and Disorders of the Female Reproductive System"
-    code: "13"
+    index: "13"
+    description: "Diseases and Disorders of the Female Reproductive System"
   -
-    name: "Pregnancy, Childbirth And Puerperium"
-    code: "14"
+    index: "14"
+    description: "Pregnancy, Childbirth And Puerperium"
   -
-    name: "Newborn And Other Neonates (Perinatal Period)"
-    code: "15"
+    index: "15"
+    description: "Newborn And Other Neonates (Perinatal Period)"
   -
-    name: "Diseases and Disorders of the Blood and Blood Forming Organs and Immunological Disorders"
-    code: "16"
+    index: "16"
+    description: "Diseases and Disorders of the Blood and Blood Forming Organs and Immunological Disorders"
   -
-    name: "Myeloproliferative DDs (Poorly Differentiated Neoplasms)"
-    code: "17"
+    index: "17"
+    description: "Myeloproliferative DDs (Poorly Differentiated Neoplasms)"
   -
-    name: "Infectious and Parasitic DDs (Systemic or unspecified sites)"
-    code: "18"
+    index: "18"
+    description: "Infectious and Parasitic DDs (Systemic or unspecified sites)"
   -
-    name: "Mental Diseases and Disorders"
-    code: "19"
+    index: "19"
+    description: "Mental Diseases and Disorders"
   -
-    name: "Alcohol/Drug Use or Induced Mental Disorders"
-    code: "20"
+    index: "20"
+    description: "Alcohol/Drug Use or Induced Mental Disorders"
   -
-    name: "Injuries, Poison And Toxic Effect of Drugs"
-    code: "21"
+    index: "21"
+    description: "Injuries, Poison And Toxic Effect of Drugs"
   -
-    name: "Burns"
-    code: "22"
+    index: "22"
+    description: "Burns"
   -
-    name: "Factors Influencing Health Status and Other Contacts with Health Services"
-    code: "23"
+    index: "23"
+    description: "Factors Influencing Health Status and Other Contacts with Health Services"
   -
-    name: "Multiple Significant Trauma"
-    code: "24"
+    index: "24"
+    description: "Multiple Significant Trauma"
   -
-    name: "Human Immunodeficiency Virus Infection"
-    code: "25"
+    index: "25"
+    description: "Human Immunodeficiency Virus Infection"
