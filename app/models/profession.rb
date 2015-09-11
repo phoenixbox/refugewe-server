@@ -7,7 +7,7 @@ class Profession < ActiveRecord::Base
   validates :type_cd, presence: true
 
   # Enums
-  as_enum :industry_cd, INDUSTRY_TYPES
+  as_enum :industry, INDUSTRY_TYPES
 
   # Associations
   belongs_to :user
