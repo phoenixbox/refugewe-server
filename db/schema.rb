@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150911045939) do
+ActiveRecord::Schema.define(version: 20150911051508) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,6 +44,18 @@ ActiveRecord::Schema.define(version: 20150911045939) do
     t.string   "token_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "documents", force: :cascade do |t|
+    t.integer  "format_cd",         null: false
+    t.integer  "category_cd",       null: false
+    t.string   "title"
+    t.text     "description"
+    t.text     "url",               null: false
+    t.integer  "documentable_id"
+    t.string   "documentable_type"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
   create_table "facebook_profiles", force: :cascade do |t|
@@ -82,11 +94,13 @@ ActiveRecord::Schema.define(version: 20150911045939) do
   add_index "organizations", ["primary_address_id"], name: "index_organizations_on_primary_address_id", using: :btree
 
   create_table "professions", force: :cascade do |t|
-    t.integer "industry_cd", null: false
-    t.string  "title",       null: false
-    t.text    "description"
-    t.boolean "verified",    null: false
-    t.integer "user_id"
+    t.integer  "industry_cd", null: false
+    t.string   "title",       null: false
+    t.text     "description"
+    t.boolean  "verified",    null: false
+    t.integer  "user_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   add_index "professions", ["user_id"], name: "index_professions_on_user_id", using: :btree
