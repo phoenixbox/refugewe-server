@@ -224,6 +224,8 @@ ActiveRecord::Schema.define(version: 20150912065807) do
     t.integer  "sub_category_cd"
     t.integer  "country_cd"
     t.integer  "user_id"
+    t.integer  "resourceable_id"
+    t.string   "resourceable_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
