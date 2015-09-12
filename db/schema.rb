@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150911171607) do
+ActiveRecord::Schema.define(version: 20150912061743) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -144,6 +144,19 @@ ActiveRecord::Schema.define(version: 20150911171607) do
 
   add_index "family_users", ["family_id"], name: "index_family_users_on_family_id", using: :btree
   add_index "family_users", ["user_id"], name: "index_family_users_on_user_id", using: :btree
+
+  create_table "instructions", force: :cascade do |t|
+    t.integer  "interval_value"
+    t.integer  "interval_unit_cd"
+    t.text     "notes"
+    t.integer  "dosage_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "instructions", ["dosage_id"], name: "index_instructions_on_dosage_id", using: :btree
+  add_index "instructions", ["interval_unit_cd"], name: "index_instructions_on_interval_unit_cd", using: :btree
+  add_index "instructions", ["interval_value"], name: "index_instructions_on_interval_value", using: :btree
 
   create_table "medical_records", force: :cascade do |t|
     t.integer  "user_id"
