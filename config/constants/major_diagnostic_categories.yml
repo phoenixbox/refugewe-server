@@ -1,0 +1,79 @@
+---
+  -
+    index: "0"
+    description: "Pre-MDC"
+  -
+    index: "1"
+    description: "Diseases and Disorders of the Nervous System"
+  -
+    index: "2"
+    description: "Diseases and Disorders of the Eye"
+  -
+    index: "3"
+    description: "Diseases and Disorders of the Ear, Nose, Mouth And Throat"
+  -
+    index: "4"
+    description: "Diseases and Disorders of the Respiratory System"
+  -
+    index: "5"
+    description: "Diseases and Disorders of the Circulatory System"
+  -
+    index: "6"
+    description: "Diseases and Disorders of the Digestive System"
+  -
+    index: "7"
+    description: "Diseases and Disorders of the Hepatobiliary System And Pancreas"
+  -
+    index: "8"
+    description: "Diseases and Disorders of the Musculoskeletal System And Connective Tissue"
+  -
+    index: "9"
+    description: "Diseases and Disorders of the Skin, Subcutaneous Tissue And Breast"
+  -
+    index: "10"
+    description: "Diseases and Disorders of the Endocrine, Nutritional And Metabolic System"
+  -
+    index: "11"
+    description: "Diseases and Disorders of the Kidney And Urinary Tract"
+  -
+    index: "12"
+    description: "Diseases and Disorders of the Male Reproductive System"
+  -
+    index: "13"
+    description: "Diseases and Disorders of the Female Reproductive System"
+  -
+    index: "14"
+    description: "Pregnancy, Childbirth And Puerperium"
+  -
+    index: "15"
+    description: "Newborn And Other Neonates (Perinatal Period)"
+  -
+    index: "16"
+    description: "Diseases and Disorders of the Blood and Blood Forming Organs and Immunological Disorders"
+  -
+    index: "17"
+    description: "Myeloproliferative DDs (Poorly Differentiated Neoplasms)"
+  -
+    index: "18"
+    description: "Infectious and Parasitic DDs (Systemic or unspecified sites)"
+  -
+    index: "19"
+    description: "Mental Diseases and Disorders"
+  -
+    index: "20"
+    description: "Alcohol/Drug Use or Induced Mental Disorders"
+  -
+    index: "21"
+    description: "Injuries, Poison And Toxic Effect of Drugs"
+  -
+    index: "22"
+    description: "Burns"
+  -
+    index: "23"
+    description: "Factors Influencing Health Status and Other Contacts with Health Services"
+  -
+    index: "24"
+    description: "Multiple Significant Trauma"
+  -
+    index: "25"
+    description: "Human Immunodeficiency Virus Infection"

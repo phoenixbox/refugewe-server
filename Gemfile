@@ -7,6 +7,7 @@ gem 'pg', '~> 0.18.2'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem "puma"
 gem 'devise', '~> 3.5.1'
+gem 'simple_enum', '~> 2.1.1'
 gem 'rack-cors', :require => 'rack/cors'
 
 group :development, :test do

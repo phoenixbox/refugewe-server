@@ -1,13 +1,30 @@
 class User < ActiveRecord::Base
-  devise :database_authenticatable, :recoverable, :validatable
+  ISO_COUNTRY_CODES ||= YAML.load(File.open("#{Rails.root}/config/constants/iso_country_codes.yml", 'r')).map {|country| country["code"] }
+  MARITAL_STATUSES ||= YAML.load(File.open("#{Rails.root}/config/constants/marital_statuses.yml", 'r'))
 
+  devise :database_authenticatable, :recoverable, :validatable
   after_create :update_access_token!
 
+  # Validations
   validates :display_name, presence: true, uniqueness: true
-  # Fetch the user email on another call
   validates :email, presence: true, uniqueness: true
 
+  as_enum :martial_status, MARITAL_STATUSES
+  as_enum :nationality, ISO_COUNTRY_CODES
+
+  # Associations
   has_many :authentications
+  has_many :addresses, as: :addressable, dependent: :destroy
+  has_many :organization_users
+  has_many :organizations, through: :organization_users
+  has_many :family_users
+  has_many :families, through: :family_users
+
+  has_many :professions
+  has_many :resources
+  # - self-referential -
+  has_many :dependents, foreign_key: :source_user_id
+  has_many :declared_dependents, through: :dependents, source: :target_user
 
   def self.from_omniauth(params)
     password = Devise.friendly_token[0,20]
