@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150912061743) do
+ActiveRecord::Schema.define(version: 20150912065807) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -214,6 +214,25 @@ ActiveRecord::Schema.define(version: 20150912061743) do
   end
 
   add_index "professions", ["user_id"], name: "index_professions_on_user_id", using: :btree
+
+  create_table "resources", force: :cascade do |t|
+    t.string   "city"
+    t.string   "unit"
+    t.integer  "value"
+    t.integer  "type_cd"
+    t.integer  "category_cd"
+    t.integer  "sub_category_cd"
+    t.integer  "country_cd"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "resources", ["category_cd"], name: "index_resources_on_category_cd", using: :btree
+  add_index "resources", ["country_cd"], name: "index_resources_on_country_cd", using: :btree
+  add_index "resources", ["sub_category_cd"], name: "index_resources_on_sub_category_cd", using: :btree
+  add_index "resources", ["type_cd"], name: "index_resources_on_type_cd", using: :btree
+  add_index "resources", ["user_id"], name: "index_resources_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

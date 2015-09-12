@@ -21,6 +21,7 @@ class User < ActiveRecord::Base
   has_many :families, through: :family_users
 
   has_many :professions
+  has_many :resources
   # - self-referential -
   has_many :dependents, foreign_key: :source_user_id
   has_many :declared_dependents, through: :dependents, source: :target_user
