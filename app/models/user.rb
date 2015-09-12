@@ -2,7 +2,14 @@ class User < ActiveRecord::Base
   ISO_COUNTRY_CODES ||= YAML.load(File.open("#{Rails.root}/config/constants/iso_country_codes.yml", 'r')).map {|country| country["code"] }
   MARITAL_STATUSES ||= YAML.load(File.open("#{Rails.root}/config/constants/marital_statuses.yml", 'r'))
 
-  devise :database_authenticatable, :recoverable, :validatable
+  devise :database_authenticatable,
+         :recoverable,
+         :validatable,
+         :confirmable,
+         :recoverable,
+         :trackable,
+         :lockable
+
   after_create :update_access_token!
 
   # Validations
@@ -19,6 +26,7 @@ class User < ActiveRecord::Base
   has_many :organizations, through: :organization_users
   has_many :family_users
   has_many :families, through: :family_users
+  has_many :resources, as: :resourceable, dependent: :destroy
 
   has_many :professions
   has_many :resources

@@ -9,6 +9,8 @@ class CreateResources < ActiveRecord::Migration
       t.integer :sub_category_cd, index: true
       t.integer :country_cd, index: true
       t.references :user, index: true
+      t.integer :resourceable_id
+      t.string :resourceable_type
       t.timestamps
     end
   end

@@ -8,6 +8,8 @@ class Resource < ActiveRecord::Base
   as_enum :category, RESOURCE_CATEGORIES
   as_enum :sub_category, RESOURCE_SUB_CATEGORIES
   as_enum :country, ISO_COUNTRY_CODES
+
   # Associations
   belongs_to :user
+  belongs_to :resourceable, polymorphic: true
 end
