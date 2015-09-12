@@ -2,6 +2,7 @@ module V1
   class SessionSerializer < ActiveModel::Serializer
     attributes  :access_token,
                 :token_type,
+                :id,
                 :uuid,
                 :email,
                 :facebook_username,
@@ -14,6 +15,10 @@ module V1
 
     def token_type
       'Bearer'
+    end
+
+    def id
+      object.id
     end
 
     def uuid
