@@ -70,11 +70,6 @@ class User < ActiveRecord::Base
       :authentication_id => auth.id
     })
   end
-  # Refresh the token per request
-  # def refresh_access_token
-  #   self.access_token = "#{self.uuid}:#{Devise.friendly_token}"
-  #   save
-  # end
 
   private
 
