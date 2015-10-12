@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
 
   # Validations
   validates :display_name, presence: true, uniqueness: true
-  validates :email, presence: true, uniqueness: true
+  validates :email, presence: true, uniqueness: true, :format => { :with =>  Devise::email_regexp }
 
   as_enum :martial_status, MARITAL_STATUSES
   as_enum :nationality, ISO_COUNTRY_CODES

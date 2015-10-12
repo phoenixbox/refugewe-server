@@ -54,6 +54,7 @@ module V1
         unless table_name == 'schema_migrations'
           hash[table_name] = field_type_map(table_name)
           hash[table_name][:associations] = assoc_map(table_name)
+          hash[table_name][:validations] = validations_map(table_name)
         end
       end
       @schema[:enums] = enum_collections
@@ -72,6 +73,18 @@ module V1
       table_reflections.each_with_object({}) do |reflection, hash|
         hash[reflection.macro] ||= []
         hash[reflection.macro] << reflection.name
+      end
+    end
+
+    def validations_map(table_name)
+      validators = table_name.classify.constantize.validators
+      validators.each_with_object({}) do |validation, hash|
+        validation.attributes.each do |attr|
+
+          hash[attr] ||= {}
+          hash[attr][validation.kind] ||= {}
+          hash[attr][validation.kind].merge!(validation.options)
+        end
       end
     end
 

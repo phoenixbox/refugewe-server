@@ -5,4 +5,6 @@ class Dosage < ActiveRecord::Base
   # Associations
   belongs_to :drug
   belongs_to :prescription
+
+  validates :value, presence: true, numericality: { only_integer: true }
 end
