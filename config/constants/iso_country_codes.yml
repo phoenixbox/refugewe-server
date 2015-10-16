@@ -1,748 +1,997 @@
 ---
   -
-    name: "Afghanistan"
     code: "AF"
+    name: "Afghanistan"
+    phone: "93"
   -
-    name: "Åland Islands"
     code: "AX"
+    name: "Åland Islands"
+    phone: "35818"
   -
-    name: "Albania"
     code: "AL"
+    name: "Albania"
+    phone: "355"
   -
-    name: "Algeria"
     code: "DZ"
+    name: "Algeria"
+    phone: "213"
   -
-    name: "American Samoa"
     code: "AS"
+    name: "American Samoa"
+    phone: "1684"
   -
-    name: "Andorra"
     code: "AD"
+    name: "Andorra"
+    phone: "376"
   -
-    name: "Angola"
     code: "AO"
+    name: "Angola"
+    phone: "244"
   -
-    name: "Anguilla"
     code: "AI"
+    name: "Anguilla"
+    phone: "1264"
   -
-    name: "Antarctica"
     code: "AQ"
+    name: "Antarctica"
+    phone: ""
   -
-    name: "Antigua and Barbuda"
     code: "AG"
+    name: "Antigua and Barbuda"
+    phone: "1268"
   -
-    name: "Argentina"
     code: "AR"
+    name: "Argentina"
+    phone: "54"
   -
-    name: "Armenia"
     code: "AM"
+    name: "Armenia"
+    phone: "374"
   -
-    name: "Aruba"
     code: "AW"
+    name: "Aruba"
+    phone: "297"
   -
-    name: "Australia"
     code: "AU"
+    name: "Australia"
+    phone: "61"
   -
-    name: "Austria"
     code: "AT"
+    name: "Austria"
+    phone: "43"
   -
-    name: "Azerbaijan"
     code: "AZ"
+    name: "Azerbaijan"
+    phone: "994"
   -
-    name: "Bahamas"
     code: "BS"
+    name: "Bahamas"
+    phone: "1242"
   -
-    name: "Bahrain"
     code: "BH"
+    name: "Bahrain"
+    phone: "973"
   -
-    name: "Bangladesh"
     code: "BD"
+    name: "Bangladesh"
+    phone: "880"
   -
-    name: "Barbados"
     code: "BB"
+    name: "Barbados"
+    phone: "1246"
   -
-    name: "Belarus"
     code: "BY"
+    name: "Belarus"
+    phone: "375"
   -
-    name: "Belgium"
     code: "BE"
+    name: "Belgium"
+    phone: "32"
   -
-    name: "Belize"
     code: "BZ"
+    name: "Belize"
+    phone: "501"
   -
-    name: "Benin"
     code: "BJ"
+    name: "Benin"
+    phone: "229"
   -
-    name: "Bermuda"
     code: "BM"
+    name: "Bermuda"
+    phone: "1441"
   -
-    name: "Bhutan"
     code: "BT"
+    name: "Bhutan"
+    phone: "975"
   -
-    name: "Bolivia, Plurinational State of"
     code: "BO"
+    name: "Bolivia, Plurinational State of"
+    phone: "591"
   -
-    name: "Bonaire, Sint Eustatius and Saba"
     code: "BQ"
+    name: "Bonaire, Sint Eustatius and Saba"
+    phone: "599"
   -
-    name: "Bosnia and Herzegovina"
     code: "BA"
+    name: "Bosnia and Herzegovina"
+    phone: "387"
   -
-    name: "Botswana"
     code: "BW"
+    name: "Botswana"
+    phone: "267"
   -
-    name: "Bouvet Island"
     code: "BV"
+    name: "Bouvet Island"
+    phone: ""
   -
-    name: "Brazil"
     code: "BR"
+    name: "Brazil"
+    phone: "55"
   -
-    name: "British Indian Ocean Territory"
     code: "IO"
+    name: "British Indian Ocean Territory"
+    phone: "246"
   -
-    name: "Brunei Darussalam"
     code: "BN"
+    name: "Brunei Darussalam"
+    phone: "673"
   -
-    name: "Bulgaria"
     code: "BG"
+    name: "Bulgaria"
+    phone: "359"
   -
-    name: "Burkina Faso"
     code: "BF"
+    name: "Burkina Faso"
+    phone: "226"
   -
-    name: "Burundi"
     code: "BI"
+    name: "Burundi"
+    phone: "257"
   -
-    name: "Cambodia"
     code: "KH"
+    name: "Cambodia"
+    phone: "855"
   -
-    name: "Cameroon"
     code: "CM"
+    name: "Cameroon"
+    phone: "237"
   -
-    name: "Canada"
     code: "CA"
+    name: "Canada"
+    phone: "1"
   -
-    name: "Cape Verde"
     code: "CV"
+    name: "Cape Verde"
+    phone: "238"
   -
-    name: "Cayman Islands"
     code: "KY"
+    name: "Cayman Islands"
+    phone: "1345"
   -
-    name: "Central African Republic"
     code: "CF"
+    name: "Central African Republic"
+    phone: "236"
   -
-    name: "Chad"
     code: "TD"
+    name: "Chad"
+    phone: "235"
   -
-    name: "Chile"
     code: "CL"
+    name: "Chile"
+    phone: "56"
   -
-    name: "China"
     code: "CN"
+    name: "China"
+    phone: "86"
   -
-    name: "Christmas Island"
     code: "CX"
+    name: "Christmas Island"
+    phone: "61"
   -
-    name: "Cocos (Keeling) Islands"
     code: "CC"
+    name: "Cocos (Keeling) Islands"
+    phone: "61"
   -
-    name: "Colombia"
     code: "CO"
+    name: "Colombia"
+    phone: "57"
   -
-    name: "Comoros"
     code: "KM"
+    name: "Comoros"
+    phone: "269"
   -
-    name: "Congo"
     code: "CG"
+    name: "Congo"
+    phone: "242"
   -
-    name: "Congo, the Democratic Republic of the"
     code: "CD"
+    name: "Congo, the Democratic Republic of the"
+    phone: "243"
   -
-    name: "Cook Islands"
     code: "CK"
+    name: "Cook Islands"
+    phone: "682"
   -
-    name: "Costa Rica"
     code: "CR"
+    name: "Costa Rica"
+    phone: "506"
   -
-    name: "Côte d'Ivoire"
     code: "CI"
+    name: "Côte d'Ivoire"
+    phone: "225"
   -
-    name: "Croatia"
     code: "HR"
+    name: "Croatia"
+    phone: "385"
   -
-    name: "Cuba"
     code: "CU"
+    name: "Cuba"
+    phone: "53"
   -
-    name: "Curaçao"
     code: "CW"
+    name: "Curaçao"
+    phone: "599"
   -
-    name: "Cyprus"
     code: "CY"
+    name: "Cyprus"
+    phone: "357"
   -
-    name: "Czech Republic"
     code: "CZ"
+    name: "Czech Republic"
+    phone: "420"
   -
-    name: "Denmark"
     code: "DK"
+    name: "Denmark"
+    phone: "45"
   -
-    name: "Djibouti"
     code: "DJ"
+    name: "Djibouti"
+    phone: "253"
   -
-    name: "Dominica"
     code: "DM"
+    name: "Dominica"
+    phone: "1767"
   -
-    name: "Dominican Republic"
     code: "DO"
+    name: "Dominican Republic"
+    phone: "1809"
   -
-    name: "Ecuador"
     code: "EC"
+    name: "Ecuador"
+    phone: "593"
   -
-    name: "Egypt"
     code: "EG"
+    name: "Egypt"
+    phone: "20"
   -
-    name: "El Salvador"
     code: "SV"
+    name: "El Salvador"
+    phone: "503"
   -
-    name: "Equatorial Guinea"
     code: "GQ"
+    name: "Equatorial Guinea"
+    phone: "240"
   -
-    name: "Eritrea"
     code: "ER"
+    name: "Eritrea"
+    phone: "291"
   -
-    name: "Estonia"
     code: "EE"
+    name: "Estonia"
+    phone: "372"
   -
-    name: "Ethiopia"
     code: "ET"
+    name: "Ethiopia"
+    phone: "251"
   -
-    name: "Falkland Islands (Malvinas)"
     code: "FK"
+    name: "Falkland Islands (Malvinas)"
+    phone: "500"
   -
-    name: "Faroe Islands"
     code: "FO"
+    name: "Faroe Islands"
+    phone: "298"
   -
-    name: "Fiji"
     code: "FJ"
+    name: "Fiji"
+    phone: "679"
   -
-    name: "Finland"
     code: "FI"
+    name: "Finland"
+    phone: "358"
   -
-    name: "France"
     code: "FR"
+    name: "France"
+    phone: "33"
   -
-    name: "French Guiana"
     code: "GF"
+    name: "French Guiana"
+    phone: "594"
   -
-    name: "French Polynesia"
     code: "PF"
+    name: "French Polynesia"
+    phone: "689"
   -
-    name: "French Southern Territories"
     code: "TF"
+    name: "French Southern Territories"
+    phone: ""
   -
-    name: "Gabon"
     code: "GA"
+    name: "Gabon"
+    phone: "241"
   -
-    name: "Gambia"
     code: "GM"
+    name: "Gambia"
+    phone: "220"
   -
-    name: "Georgia"
     code: "GE"
+    name: "Georgia"
+    phone: "995"
   -
-    name: "Germany"
     code: "DE"
+    name: "Germany"
+    phone: "49"
   -
-    name: "Ghana"
     code: "GH"
+    name: "Ghana"
+    phone: "233"
   -
-    name: "Gibraltar"
     code: "GI"
+    name: "Gibraltar"
+    phone: "350"
   -
-    name: "Greece"
     code: "GR"
+    name: "Greece"
+    phone: "30"
   -
-    name: "Greenland"
     code: "GL"
+    name: "Greenland"
+    phone: "299"
   -
-    name: "Grenada"
     code: "GD"
+    name: "Grenada"
+    phone: "1473"
   -
-    name: "Guadeloupe"
     code: "GP"
+    name: "Guadeloupe"
+    phone: "590"
   -
-    name: "Guam"
     code: "GU"
+    name: "Guam"
+    phone: "1671"
   -
-    name: "Guatemala"
     code: "GT"
+    name: "Guatemala"
+    phone: "502"
   -
-    name: "Guernsey"
     code: "GG"
+    name: "Guernsey"
+    phone: "441481"
   -
-    name: "Guinea"
     code: "GN"
+    name: "Guinea"
+    phone: "224"
   -
-    name: "Guinea-Bissau"
     code: "GW"
+    name: "Guinea-Bissau"
+    phone: "245"
   -
-    name: "Guyana"
     code: "GY"
+    name: "Guyana"
+    phone: "592"
   -
-    name: "Haiti"
     code: "HT"
+    name: "Haiti"
+    phone: "509"
   -
-    name: "Heard Island and McDonald Islands"
     code: "HM"
+    name: "Heard Island and McDonald Islands"
+    phone: " "
   -
-    name: "Holy See (Vatican City State)"
     code: "VA"
+    name: "Holy See (Vatican City State)"
+    phone: "379"
   -
-    name: "Honduras"
     code: "HN"
+    name: "Honduras"
+    phone: "504"
   -
-    name: "Hong Kong"
     code: "HK"
+    name: "Hong Kong"
+    phone: "852"
   -
-    name: "Hungary"
     code: "HU"
+    name: "Hungary"
+    phone: "36"
   -
-    name: "Iceland"
     code: "IS"
+    name: "Iceland"
+    phone: "354"
   -
-    name: "India"
     code: "IN"
+    name: "India"
+    phone: "91"
   -
-    name: "Indonesia"
     code: "ID"
+    name: "Indonesia"
+    phone: "62"
   -
-    name: "Iran, Islamic Republic of"
     code: "IR"
+    name: "Iran, Islamic Republic of"
+    phone: "98"
   -
-    name: "Iraq"
     code: "IQ"
+    name: "Iraq"
+    phone: "964"
   -
-    name: "Ireland"
     code: "IE"
+    name: "Ireland"
+    phone: "353"
   -
-    name: "Isle of Man"
     code: "IM"
+    name: "Isle of Man"
+    phone: "441624"
   -
-    name: "Israel"
     code: "IL"
+    name: "Israel"
+    phone: "972"
   -
-    name: "Italy"
     code: "IT"
+    name: "Italy"
+    phone: "39"
   -
-    name: "Jamaica"
     code: "JM"
+    name: "Jamaica"
+    phone: "1876"
   -
-    name: "Japan"
     code: "JP"
+    name: "Japan"
+    phone: "81"
   -
-    name: "Jersey"
     code: "JE"
+    name: "Jersey"
+    phone: "441534"
   -
-    name: "Jordan"
     code: "JO"
+    name: "Jordan"
+    phone: "962"
   -
-    name: "Kazakhstan"
     code: "KZ"
+    name: "Kazakhstan"
+    phone: "7"
   -
-    name: "Kenya"
     code: "KE"
+    name: "Kenya"
+    phone: "254"
   -
-    name: "Kiribati"
     code: "KI"
+    name: "Kiribati"
+    phone: "686"
   -
-    name: "Korea, Democratic People's Republic of"
     code: "KP"
+    name: "Korea, Democratic People's Republic of"
+    phone: "850"
   -
-    name: "Korea, Republic of"
     code: "KR"
+    name: "Korea, Republic of"
+    phone: "82"
   -
-    name: "Kuwait"
     code: "KW"
+    name: "Kuwait"
+    phone: "965"
   -
-    name: "Kyrgyzstan"
     code: "KG"
+    name: "Kyrgyzstan"
+    phone: "996"
   -
-    name: "Lao People's Democratic Republic"
     code: "LA"
+    name: "Lao People's Democratic Republic"
+    phone: "856"
   -
-    name: "Latvia"
     code: "LV"
+    name: "Latvia"
+    phone: "371"
   -
-    name: "Lebanon"
     code: "LB"
+    name: "Lebanon"
+    phone: "961"
   -
-    name: "Lesotho"
     code: "LS"
+    name: "Lesotho"
+    phone: "266"
   -
-    name: "Liberia"
     code: "LR"
+    name: "Liberia"
+    phone: "231"
   -
-    name: "Libya"
     code: "LY"
+    name: "Libya"
+    phone: "218"
   -
-    name: "Liechtenstein"
     code: "LI"
+    name: "Liechtenstein"
+    phone: "423"
   -
-    name: "Lithuania"
     code: "LT"
+    name: "Lithuania"
+    phone: "370"
   -
-    name: "Luxembourg"
     code: "LU"
+    name: "Luxembourg"
+    phone: "352"
   -
-    name: "Macao"
     code: "MO"
+    name: "Macao"
+    phone: "853"
   -
-    name: "Macedonia, the Former Yugoslav Republic of"
     code: "MK"
+    name: "Macedonia, the Former Yugoslav Republic of"
+    phone: "389"
   -
-    name: "Madagascar"
     code: "MG"
+    name: "Madagascar"
+    phone: "261"
   -
-    name: "Malawi"
     code: "MW"
+    name: "Malawi"
+    phone: "265"
   -
-    name: "Malaysia"
     code: "MY"
+    name: "Malaysia"
+    phone: "60"
   -
-    name: "Maldives"
     code: "MV"
+    name: "Maldives"
+    phone: "960"
   -
-    name: "Mali"
     code: "ML"
+    name: "Mali"
+    phone: "223"
   -
-    name: "Malta"
     code: "MT"
+    name: "Malta"
+    phone: "356"
   -
-    name: "Marshall Islands"
     code: "MH"
+    name: "Marshall Islands"
+    phone: "692"
   -
-    name: "Martinique"
     code: "MQ"
+    name: "Martinique"
+    phone: "596"
   -
-    name: "Mauritania"
     code: "MR"
+    name: "Mauritania"
+    phone: "222"
   -
-    name: "Mauritius"
     code: "MU"
+    name: "Mauritius"
+    phone: "230"
   -
-    name: "Mayotte"
     code: "YT"
+    name: "Mayotte"
+    phone: "262"
   -
-    name: "Mexico"
     code: "MX"
+    name: "Mexico"
+    phone: "52"
   -
-    name: "Micronesia, Federated States of"
     code: "FM"
+    name: "Micronesia, Federated States of"
+    phone: "691"
   -
-    name: "Moldova, Republic of"
     code: "MD"
+    name: "Moldova, Republic of"
+    phone: "373"
   -
-    name: "Monaco"
     code: "MC"
+    name: "Monaco"
+    phone: "377"
   -
-    name: "Mongolia"
     code: "MN"
+    name: "Mongolia"
+    phone: "976"
   -
-    name: "Montenegro"
     code: "ME"
+    name: "Montenegro"
+    phone: "382"
   -
-    name: "Montserrat"
     code: "MS"
+    name: "Montserrat"
+    phone: "1664"
   -
-    name: "Morocco"
     code: "MA"
+    name: "Morocco"
+    phone: "212"
   -
-    name: "Mozambique"
     code: "MZ"
+    name: "Mozambique"
+    phone: "258"
   -
-    name: "Myanmar"
     code: "MM"
+    name: "Myanmar"
+    phone: "95"
   -
-    name: "Namibia"
     code: "NA"
+    name: "Namibia"
+    phone: "264"
   -
-    name: "Nauru"
     code: "NR"
+    name: "Nauru"
+    phone: "674"
   -
-    name: "Nepal"
     code: "NP"
+    name: "Nepal"
+    phone: "977"
   -
-    name: "Netherlands"
     code: "NL"
+    name: "Netherlands"
+    phone: "31"
   -
-    name: "New Caledonia"
     code: "NC"
+    name: "New Caledonia"
+    phone: "687"
   -
-    name: "New Zealand"
     code: "NZ"
+    name: "New Zealand"
+    phone: "64"
   -
-    name: "Nicaragua"
     code: "NI"
+    name: "Nicaragua"
+    phone: "505"
   -
-    name: "Niger"
     code: "NE"
+    name: "Niger"
+    phone: "227"
   -
-    name: "Nigeria"
     code: "NG"
+    name: "Nigeria"
+    phone: "234"
   -
-    name: "Niue"
     code: "NU"
+    name: "Niue"
+    phone: "683"
   -
-    name: "Norfolk Island"
     code: "NF"
+    name: "Norfolk Island"
+    phone: "672"
   -
-    name: "Northern Mariana Islands"
     code: "MP"
+    name: "Northern Mariana Islands"
+    phone: "1670"
   -
-    name: "Norway"
     code: "NO"
+    name: "Norway"
+    phone: "47"
   -
-    name: "Oman"
     code: "OM"
+    name: "Oman"
+    phone: "968"
   -
-    name: "Pakistan"
     code: "PK"
+    name: "Pakistan"
+    phone: "92"
   -
-    name: "Palau"
     code: "PW"
+    name: "Palau"
+    phone: "680"
   -
-    name: "Palestine, State of"
     code: "PS"
+    name: "Palestine, State of"
+    phone: "970"
   -
-    name: "Panama"
     code: "PA"
+    name: "Panama"
+    phone: "507"
   -
-    name: "Papua New Guinea"
     code: "PG"
+    name: "Papua New Guinea"
+    phone: "675"
   -
-    name: "Paraguay"
     code: "PY"
+    name: "Paraguay"
+    phone: "595"
   -
-    name: "Peru"
     code: "PE"
+    name: "Peru"
+    phone: "51"
   -
-    name: "Philippines"
     code: "PH"
+    name: "Philippines"
+    phone: "63"
   -
-    name: "Pitcairn"
     code: "PN"
+    name: "Pitcairn"
+    phone: "870"
   -
-    name: "Poland"
     code: "PL"
+    name: "Poland"
+    phone: "48"
   -
-    name: "Portugal"
     code: "PT"
+    name: "Portugal"
+    phone: "351"
   -
-    name: "Puerto Rico"
     code: "PR"
+    name: "Puerto Rico"
+    phone: "1787"
   -
-    name: "Qatar"
     code: "QA"
+    name: "Qatar"
+    phone: "974"
   -
-    name: "Réunion"
     code: "RE"
+    name: "Réunion"
+    phone: "262"
   -
-    name: "Romania"
     code: "RO"
+    name: "Romania"
+    phone: "40"
   -
-    name: "Russian Federation"
     code: "RU"
+    name: "Russian Federation"
+    phone: "7"
   -
-    name: "Rwanda"
     code: "RW"
+    name: "Rwanda"
+    phone: "250"
   -
-    name: "Saint Barthélemy"
     code: "BL"
+    name: "Saint Barthélemy"
+    phone: "590"
   -
-    name: "Saint Helena, Ascension and Tristan da Cunha"
     code: "SH"
+    name: "Saint Helena, Ascension and Tristan da Cunha"
+    phone: "290"
   -
-    name: "Saint Kitts and Nevis"
     code: "KN"
+    name: "Saint Kitts and Nevis"
+    phone: "1869"
   -
-    name: "Saint Lucia"
     code: "LC"
+    name: "Saint Lucia"
+    phone: "1758"
   -
-    name: "Saint Martin (French part)"
     code: "MF"
+    name: "Saint Martin (French part)"
+    phone: "590"
   -
-    name: "Saint Pierre and Miquelon"
     code: "PM"
+    name: "Saint Pierre and Miquelon"
+    phone: "508"
   -
-    name: "Saint Vincent and the Grenadines"
     code: "VC"
+    name: "Saint Vincent and the Grenadines"
+    phone: "1784"
   -
-    name: "Samoa"
     code: "WS"
+    name: "Samoa"
+    phone: "685"
   -
-    name: "San Marino"
     code: "SM"
+    name: "San Marino"
+    phone: "378"
   -
-    name: "Sao Tome and Principe"
     code: "ST"
+    name: "Sao Tome and Principe"
+    phone: "239"
   -
-    name: "Saudi Arabia"
     code: "SA"
+    name: "Saudi Arabia"
+    phone: "966"
   -
-    name: "Senegal"
     code: "SN"
+    name: "Senegal"
+    phone: "221"
   -
-    name: "Serbia"
     code: "RS"
+    name: "Serbia"
+    phone: "381"
   -
-    name: "Seychelles"
     code: "SC"
+    name: "Seychelles"
+    phone: "248"
   -
-    name: "Sierra Leone"
     code: "SL"
+    name: "Sierra Leone"
+    phone: "232"
   -
-    name: "Singapore"
     code: "SG"
+    name: "Singapore"
+    phone: "65"
   -
-    name: "Sint Maarten (Dutch part)"
     code: "SX"
+    name: "Sint Maarten (Dutch part)"
+    phone: "599"
   -
-    name: "Slovakia"
     code: "SK"
+    name: "Slovakia"
+    phone: "421"
   -
-    name: "Slovenia"
     code: "SI"
+    name: "Slovenia"
+    phone: "386"
   -
-    name: "Solomon Islands"
     code: "SB"
+    name: "Solomon Islands"
+    phone: "677"
   -
-    name: "Somalia"
     code: "SO"
+    name: "Somalia"
+    phone: "252"
   -
-    name: "South Africa"
     code: "ZA"
+    name: "South Africa"
+    phone: "27"
   -
-    name: "South Georgia and the South Sandwich Islands"
     code: "GS"
+    name: "South Georgia and the South Sandwich Islands"
+    phone: ""
   -
-    name: "South Sudan"
     code: "SS"
+    name: "South Sudan"
+    phone: "211"
   -
-    name: "Spain"
     code: "ES"
+    name: "Spain"
+    phone: "34"
   -
-    name: "Sri Lanka"
     code: "LK"
+    name: "Sri Lanka"
+    phone: "94"
   -
-    name: "Sudan"
     code: "SD"
+    name: "Sudan"
+    phone: "249"
   -
-    name: "Suriname"
     code: "SR"
+    name: "Suriname"
+    phone: "597"
   -
-    name: "Svalbard and Jan Mayen"
     code: "SJ"
+    name: "Svalbard and Jan Mayen"
+    phone: "47"
   -
-    name: "Swaziland"
     code: "SZ"
+    name: "Swaziland"
+    phone: "268"
   -
-    name: "Sweden"
     code: "SE"
+    name: "Sweden"
+    phone: "46"
   -
-    name: "Switzerland"
     code: "CH"
+    name: "Switzerland"
+    phone: "41"
   -
-    name: "Syrian Arab Republic"
     code: "SY"
+    name: "Syrian Arab Republic"
+    phone: "963"
   -
-    name: "Taiwan, Province of China"
     code: "TW"
+    name: "Taiwan, Province of China"
+    phone: "886"
   -
-    name: "Tajikistan"
     code: "TJ"
+    name: "Tajikistan"
+    phone: "992"
   -
-    name: "Tanzania, United Republic of"
     code: "TZ"
+    name: "Tanzania, United Republic of"
+    phone: "255"
   -
-    name: "Thailand"
     code: "TH"
+    name: "Thailand"
+    phone: "66"
   -
-    name: "Timor-Leste"
     code: "TL"
+    name: "Timor-Leste"
+    phone: "670"
   -
-    name: "Togo"
     code: "TG"
+    name: "Togo"
+    phone: "228"
   -
-    name: "Tokelau"
     code: "TK"
+    name: "Tokelau"
+    phone: "690"
   -
-    name: "Tonga"
     code: "TO"
+    name: "Tonga"
+    phone: "676"
   -
-    name: "Trinidad and Tobago"
     code: "TT"
+    name: "Trinidad and Tobago"
+    phone: "1868"
   -
-    name: "Tunisia"
     code: "TN"
+    name: "Tunisia"
+    phone: "216"
   -
-    name: "Turkey"
     code: "TR"
+    name: "Turkey"
+    phone: "90"
   -
-    name: "Turkmenistan"
     code: "TM"
+    name: "Turkmenistan"
+    phone: "993"
   -
-    name: "Turks and Caicos Islands"
     code: "TC"
+    name: "Turks and Caicos Islands"
+    phone: "1649"
   -
-    name: "Tuvalu"
     code: "TV"
+    name: "Tuvalu"
+    phone: "688"
   -
-    name: "Uganda"
     code: "UG"
+    name: "Uganda"
+    phone: "256"
   -
-    name: "Ukraine"
     code: "UA"
+    name: "Ukraine"
+    phone: "380"
   -
-    name: "United Arab Emirates"
     code: "AE"
+    name: "United Arab Emirates"
+    phone: "971"
   -
-    name: "United Kingdom"
     code: "GB"
+    name: "United Kingdom"
+    phone: "44"
   -
-    name: "United States"
     code: "US"
+    name: "United States"
+    phone: "1"
   -
-    name: "United States Minor Outlying Islands"
     code: "UM"
+    name: "United States Minor Outlying Islands"
+    phone: "1"
   -
-    name: "Uruguay"
     code: "UY"
+    name: "Uruguay"
+    phone: "598"
   -
-    name: "Uzbekistan"
     code: "UZ"
+    name: "Uzbekistan"
+    phone: "998"
   -
-    name: "Vanuatu"
     code: "VU"
+    name: "Vanuatu"
+    phone: "678"
   -
-    name: "Venezuela, Bolivarian Republic of"
     code: "VE"
+    name: "Venezuela, Bolivarian Republic of"
+    phone: "58"
   -
-    name: "Viet Nam"
     code: "VN"
+    name: "Vietnam"
+    phone: "84"
   -
-    name: "Virgin Islands, British"
     code: "VG"
+    name: "Virgin Islands, British"
+    phone: "1284"
   -
-    name: "Virgin Islands, U.S."
     code: "VI"
+    name: "Virgin Islands, U.S."
+    phone: "1340"
   -
-    name: "Wallis and Futuna"
     code: "WF"
+    name: "Wallis and Futuna"
+    phone: "681"
   -
-    name: "Western Sahara"
     code: "EH"
+    name: "Western Sahara"
+    phone: "212"
   -
-    name: "Yemen"
     code: "YE"
+    name: "Yemen"
+    phone: "967"
   -
-    name: "Zambia"
     code: "ZM"
+    name: "Zambia"
+    phone: "260"
   -
-    name: "Zimbabwe"
     code: "ZW"
+    name: "Zimbabwe"
+    phone: "263"
