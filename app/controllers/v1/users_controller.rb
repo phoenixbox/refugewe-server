@@ -35,7 +35,7 @@ module V1
     end
     # Second Level Profile Keys
     def facebook_profile_params
-      [:id, :name, :email, :token, :token_type, :expiration, {:raw => facebook_raw_params} ]
+      [:id, :name, :email, :photo_url, :token, :token_type, :expiration, {:raw => facebook_raw_params} ]
     end
     # Third Level Raw Keys
     def facebook_raw_params

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151016020851) do
+ActiveRecord::Schema.define(version: 20151016040856) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -125,6 +125,7 @@ ActiveRecord::Schema.define(version: 20151016020851) do
     t.hstore   "raw"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
+    t.text     "photo_url"
   end
 
   add_index "facebook_profiles", ["raw"], name: "index_facebook_profiles_on_raw", using: :gin

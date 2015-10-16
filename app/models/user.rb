@@ -66,6 +66,7 @@ class User < ActiveRecord::Base
       :username => params['profile']['username'],
       :display_name => params['profile']['name'],
       :email => params['profile']['email'],
+      :photo_url => params['profile']['photo_url'],
       :raw => params['profile']['raw'],
       :token => auth.token,
       :authentication_id => auth.id
