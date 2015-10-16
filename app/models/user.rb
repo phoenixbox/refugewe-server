@@ -26,6 +26,7 @@ class User < ActiveRecord::Base
   has_many :family_users
   has_many :families, through: :family_users
   has_many :resources, as: :resourceable, dependent: :destroy
+  has_many :phones, as: :phoneable, dependent: :destroy
 
   has_many :professions
   has_many :resources

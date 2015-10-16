@@ -7,6 +7,7 @@ class Organization < ActiveRecord::Base
   # Associations
   has_many :addresses, as: :addressable, dependent: :destroy
   has_many :resources, as: :resourceable, dependent: :destroy
+  has_many :phones, as: :phoneable, dependent: :destroy
   has_many :organization_users
   has_many :users, through: :organization_users
 end
